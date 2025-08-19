@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spices</title>
+    <link rel="icon" type="png" href="chef.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Leckerli+One&family=Satisfy&display=swap"rel="stylesheet"/>
+    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+  </head>
+  <body class="container">
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#select">Food Items</a></li>
+      <li><a href="#click">About Us</a></li>
+      <li><a href="#call">Contact</a></li>
+      <li><a href="#rating">Ratings</a></li>
+      <div class="cart-items">
+        <div class="count">0</div>
+        <ion-icon id="food-count" onclick=showSidebar() name="cart"></ion-icon>
+      </div>
+      <div class="slide slide-active">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        <!-- <div class="cart-food">
+          <img src="yenna-blog2.png" alt="dosa" class="cart-img">
+          <div class="details">
+            <div class="food-title">Dosa</div>
+            <div class="price-box">
+            <div class="price">40</div>
+            <div class="price-amt">40</div>
+            </div>
+             <input type="number" value="1" class="quantity">
+          </div>
+         <ion-icon name="trash" class="remove"></ion-icon>
+        </div>
+
+        <div class="cart-food">
+          <img src="yenna-blog2.png" alt="dosa" class="cart-img">
+          <div class="details">
+            <div class="food-title">Dosa</div>
+            <div class="price-box">
+            <div class="price">40</div>
+            <div class="price-amt">40</div>
+            </div>
+             <input type="number" value="1" class="quantity">
+          </div>
+         <ion-icon name="trash" class="remove"></ion-icon>
+        </div> -->
+        </div>
+        <div class="total">
+          <div class="total-title">Total:</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+        <button class="order" type="submit">Place Order</button>
+        <ion-icon name="close" onclick=hideSidebar() class="cut"></ion-icon>
+      </div>
+    </ul>
+
+    <div class="parent">
+      <div class="parent1">
+        <h1 class="satisfy-regular">Welcome</h1>
+        <h3 class="satisfy-regular">To</h3>
+        <p class="satisfy-regular">Our Restaurant</p>
+      </div>
+      <img class="png" src="png.png" />
+    </div>
+    <a href="form.html">
+      <button class="btn"><b>Reserve Now</b></button></a
+    >
+    <h2 class="food" id="select">Food Items</h2>
+    <div class="item">
+      <div class="items">
+        <div class="picture"><img src="yenna-blog2.png" class="pic" /></div>
+        <h3>Dosa</h3>
+        <h5>Rs.40</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chapathi.jpg" class="pic" /></div>
+        <h3>Chappathi</h3>
+        <h5>Rs.50</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="idly.jpg" class="pic" /></div>
+        <h3>Idly</h3>
+        <h5>Rs.15</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="parotta.jpg" class="pic" /></div>
+        <h3>Parotta</h3>
+        <h5>Rs.20</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="pongal.jpg" class="pic" /></div>
+        <h3>Pongal</h3>
+        <h5>Rs.40</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="poori.jpg" class="pic" /></div>
+        <h3>Poori</h3>
+        <h5>Rs.60</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chi-65.jpg" class="pic" /></div>
+        <h3>Chicken-65</h3>
+        <h5>Rs.70</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chi-bri.jpg" class="pic" /></div>
+        <h3>Chicken Biriyani</h3>
+        <h5>Rs.230</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chi-kothu.jpg" class="pic" /></div>
+        <h3>Chicken Kothu</h3>
+        <h5>Rs.130</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chi-noodle.webp" class="pic" /></div>
+        <h3>Chicken Noodles</h3>
+        <h5>Rs.110</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="chi-rice.jpg" class="pic" /></div>
+        <h3>Chicken Rice</h3>
+        <h5>Rs.120</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+      <div class="items">
+        <div class="picture"><img src="prawn-65.jpg" class="pic" /></div>
+        <h3>prawn-65</h3>
+        <h5>Rs.150</h5>
+        <ion-icon class="cart" name="cart"></ion-icon>
+      </div>
+    </div>
+    <h1 class="head" id="click">About Us</h1>
+    <p class="about">
+      Welcome to a place where taste meets tradition. We serve fresh,
+      high-quality food made with love and care. From classic South Indian
+      flavors to modern fusion dishes, we’ve got it all. Our cozy ambiance is
+      perfect for families, friends, and food lovers alike. Cleanliness, great
+      service, and customer satisfaction are our top priorities. Every bite
+      tells a story – come be part of ours!
+    </p>
+    <h1 class="phone" id="call">Contact</h1>
+    <div class="con">
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="Enter your mail" />
+      <input type="text" placeholder="your mobile number" maxlength="1" />
+      <input type="text" placeholder="message" />
+      <button type="submit">Send message</button>
+    </div>
+    <div class="ad">
+      <div class="all">
+        <h3 class="style"><ion-icon name="location"></ion-icon>Address</h3>
+        <br />
+        <p class="add">191,North street near <br />svr builders chennai</p>
+      </div>
+      <div class="all">
+        <h3 class="style"><ion-icon class="icon" name="call"></ion-icon>phone</h3>
+        <br />
+        <p class="add">9876543210</p>
+      </div>
+      <div class="all">
+        <h3 class="style"><ion-icon class="icon" name="mail"></ion-icon>email</h3>
+        <br />
+        <p class="add">Restaurant@gmail.com</p>
+      </div>
+    </div>
+    <div class="rating-container">
+      <h1 class="head" id="rating">Feedback</h1>
+  <div class="stars" id="stars">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <p id="rating-value">Rating: 0</p>
+  <input type="text" class="text" placeholder="enter your feedback">
+  <button class="feedback" type="submit">Send Feedback</button>
+</div>
+
+
+    <script src="script.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Register</h1>
+        <div class="input">
+          <lable for="name">Name</lable>
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="input">
+          <lable for="email">Email</lable>
+          <input type="email" placeholder="Enter your mail" />
+        </div>
+        <div class="input">
+          <lable for="mobile">Mobile no</lable>
+          <input type="text" placeholder="Enter your mobile number" maxlength="10"/>
+        </div>
+        <div class="input">
+          <lable for="Reservation">Reservation Date</lable>
+          <input type="Date" />
+        </div>
+        <div class="input">
+          <lable for="time">Reservation Time</lable>
+          <input type="time" />
+        </div>
+        <button class="reserve" type="submit">Reserve Now</button>
+
+      </form>
+    </div>
+    <script>
+      let reserve=document.querySelector('.reserve')
+reserve.addEventListener("click",()=>{
+  alert('Backend is not connected ')
+})
+    </script>
+  </body>
+</html>
